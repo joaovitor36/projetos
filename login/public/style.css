@@ -3,3 +3,16 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.usuario-login{
+    /*centralizando div*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*ajustando tamanho da div*/
+    width: 500px;
+    height: 500px;
+    border: 2px solid #252424;
+    border-radius:  14px;
+}
