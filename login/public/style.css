@@ -2,9 +2,20 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none
 }
 
-.usuario-login{
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*font-family: 'Raleway', sans-serif;*/
+
+body{
+    font-family:'Raleway', sans-serif;
+    background-image: linear-gradient(to right, #e2e2e2, #ffffff);
+    width: 100%;
+    height: 100vh;
+}
+
+.container-login{
     /*centralizando div*/
     position: absolute;
     top: 50%;
@@ -15,4 +26,215 @@
     height: 500px;
     border: 2px solid #252424;
     border-radius:  14px;
+    /*sombra*/
+    background-color: #ffffff;
+    box-shadow: 25px 25px 10px #0000001f
+}
+
+.container-centro-login{
+    /*centralizando div*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*ajustando tamanho da div*/
+    width: 300px;
+    height: 250px;
+    /*flexbox*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.usuario{
+    
+    border: none;
+    border-radius: 5px;
+    background-color: #cecece;
+    width: 200px;
+    height: 40px;
+}
+
+.senha{
+   
+    border: none;
+    border-radius: 5px;
+    background-color: #cecece;
+    width: 200px;
+    height: 40px;
+    
+}
+
+.login-button{
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    transition: 0.5s;
+}
+
+.login-button:hover{
+    background-color: #252424;
+    color: #ffffff;
+}
+
+.conteudo{
+    /*centralizando div*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*ajustando tamanho da div*/
+    width: 1100px;
+    height: 800px;
+    border: 2px solid #252424;
+    border-radius:  14px;
+    /*sombra*/
+    box-shadow: 25px 25px 10px #0000001f;
+    /*flexbox*/
+    display: flex;
+}
+
+.conteudo-painel{
+    /*ajustando tamanho da div*/
+    width: 350px;
+    height: 798px;
+    background: #111111;
+    border-radius:  14px 0px 0px 14px;
+    /*flexbox*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-painel-links{
+    /*flexbox*/
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.conteudo-painel-links-claro{
+    background: #ffffff;
+    width: 350px;
+    height: 40px;
+    /*flexbox*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*editando texto*/
+    color: #111111;
+    font-size: larger;
+
+}
+
+.conteudo-painel-links-escuro{
+    background: #adadad;
+    width: 350px;
+    height: 40px;
+    /*flexbox*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*editando texto*/
+    color: #111111;
+    font-size: larger;
+    transition: 0.5s;
+}
+.conteudo-painel-links-escuro:hover{
+    background: #ffffff;
+
+}
+
+.conteudo-clientes{
+    /*ajustando tamanho da div*/
+    width: 750px;
+    height: 798px;
+    border-radius:  0px 14px 14px 0px;
+}
+
+.conteudo-clientes-dentro{
+    /*flexbox*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    /*padding*/
+    padding-top: 100px;
+    
+}
+
+.conteudo-clientes-bv:first-child{
+    text-align: left;
+}
+
+.conteudo-lista-cliente{
+    /*ajustando tamanho da div*/
+    width: 650px;
+    height: 400px;
+    border-radius:  0px 14px 14px 0px;
+}
+.conteudo-lista-cliente-h2{
+    text-align: center;
+
+}
+
+.conteudo-lista-cliente-p{
+    /*scrollbar*/
+    overflow: hidden;
+    overflow-y: scroll;
+    /*ajustando tamanho da div*/
+    width: 600px;
+    height: 400px;
+}
+
+.conteudo-lista-cliente-p::-webkit-scrollbar{
+    width: 10px;
+    background-color: #e7e7e7;
+    border-radius: 10px;
+}
+
+.conteudo-lista-cliente-p::-webkit-scrollbar-thumb{
+    background-color: #a1a0a0;
+    border-radius: 10px;
+}
+
+.conteudo-clientes-cadastrar{
+    background: #adadad;
+    color: #111111;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    transition: 0.5s;
+    /*flexbox*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-clientes-cadastrar:hover{
+    background-color: #252424;
+    color: #ffffff;
+}
+
+.conteudo-mudar-senha{
+    /*flexbox*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.mudar-senha{
+    /*flexbox*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
