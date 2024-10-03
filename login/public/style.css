@@ -237,4 +237,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /*ajustando tamanho*/
+    width: 350px;
+    height: 400px;
 }
